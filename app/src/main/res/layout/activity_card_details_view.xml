@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Card_details_view">
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="336dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="7dp"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Food King Restaurants"
+            android:textAlignment="center"
+            android:textColor="#AC08F3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="336dp"
+            android:layout_height="320dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="45dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/aa"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="336dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="7dp"
+            >
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                >
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="330dp"
+                    android:layout_height="60dp"
+                    android:text="Chicken Tanduri"
+                    android:textColor="#61A503"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="5dp"
+                    />
+                <TextView
+                    android:id="@+id/product_description"
+                    android:layout_width="330dp"
+                    android:layout_height="60dp"
+                    android:text="The chicken gets its characteristic red hue from either lots of fiery chile or the addition of red food dye."
+                    android:textColor="#101010"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="63dp"
+                    android:layout_marginBottom="5dp"
+                    />
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="330dp"
+                    android:layout_height="60dp"
+                    android:text="$ 8.00"
+                    android:textColor="#A1149B"
+                    android:gravity="center"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
